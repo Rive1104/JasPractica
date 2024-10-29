@@ -1,0 +1,38 @@
+<doctype html>
+
+    <head>
+        <script>
+            function miFuncion() {
+                document.getElementById("demo3").innerHTML = "Párrafo CAMBIÓ con función";
+            }
+        </script>
+    </head>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "La Ballena Azúl"'>Respuesta
+        <p id="demo">¿Cuál es el animal marino más grande del mundo?.</p>
+
+        <body>
+            <h2>Que puede hacer Javascript</h2>
+    </button>
+    <h2>JavaScript puede cambiar Atributos HTML.</h2>
+    <p>En este caso cambia el atributo src (source) de una imagen</p>
+    <button onclick="document.getElementById('myImage').src='RidleyFlying2.PNG'">Volar</button>
+    <img id="myImage" src="RidleyFlying2.PNG" style="width: 100px">
+    <button onclick="document.getElementById('myImage').src='RidleyFlying.PNG'">Volar</button>
+    <br>
+    <img id="myImage2" src="WhatsApp Image 2024-10-23 at 6.07.49 PM.jpeg" style="width:100px"
+        onclick="document.getElementById('myImage2').src='WhatsApp Image 2024-10-23 at 6.08.03 PM.jpeg'">
+    <p id="demo2">JavaScript cambia el estilo de un elemento HTML.</p>
+    <button type="button" onclick="aumentar()">Cambiar tamaño!</button> <br>
+    <p id="demo3">Ocultame.</p>
+    <button type="button" onclick="document.getElementById('demo3').style.display='none'">Ocultar! </button>
+    <p>muéstralo</p>
+    <button type="button" onclick="document.getElementById('demo3').style.display='block' ">Mostrar!</button>
+    <h2>JavaScript con Función en HEAD</h2>
+    <button type="button" onclick="miFuncion()">Intentalo</button>
+    <h2>JavaScript Externo</h2>
+    <button type="button" onclick="myFunction()">Intentalo2</button>
+    <p>("myFunction está en un archivo externo")</p>
+    <script src="myScript.js"></script>
+    </body>
+
+    </html>
